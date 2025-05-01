@@ -3,8 +3,13 @@
 <head>
     <title>tugas5</title>
     <style>
+        .bil{
+            background-color: white;
+            font-weight: normal;
+        }
         .header {
-            background-color: lime ; 
+            background-color: lime ;
+            font-weight: normal;
         }
         .ganjil {
             background-color: yellow; 
@@ -12,6 +17,11 @@
         .genap {
             background-color: cyan; 
         }
+        th, td {
+        text-align: left;
+        vertical-align: top;     
+        }
+
     </style>
 </head>
 <body>
@@ -29,7 +39,7 @@ foreach ($angka as $numbers) {
 <h2>Tabel Matriks</h2>
 <table border="1">
     <tr>
-        <th class="header">bilangan</th>
+        <th class="bil">bilangan</th>
         <?php
         $kolom = range(1, 10);
         foreach($kolom as $k) {
